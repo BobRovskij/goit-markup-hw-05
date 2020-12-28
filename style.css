@@ -56,7 +56,8 @@ header {
     line-height: 16px;
     letter-spacing: 0.02em;
 }
-.passive:hover {
+.passive:hover,
+.passive:focus {
     color: #2196F3;
 }
 .letter {
@@ -87,7 +88,8 @@ header {
 
     text-decoration: none;
 }
-.site-navi a:hover {
+.site-navi a:hover,
+.site-navi a:focus {
     color: #2196F3;
 }
 .site-nav .item {
@@ -452,7 +454,8 @@ header {
     align-items: center;
     fill: #AFB1B8 ;
 }
-.company:hover {
+.company:hover,
+.company:focus {
     border: 1px solid #2196F3;
     fill: #2196F3;
 }
@@ -551,7 +554,8 @@ footer {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 }
-.footer-soc:hover{
+.footer-soc:hover,
+.footer-soc:focus {
     background: #2196F3;
 }
 .social-networks li:not(:last-child){
@@ -644,12 +648,18 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
     background: #F5F4FA;
     border-radius: 4px;
     color: #212121;
     text-transform: capitalize;
 }
-.uppercase:hover { 
+.uppercase:hover,
+.uppercase:focus { 
     color: #FFFFFF;
     background-color: #2196F3;
 }
@@ -685,10 +695,12 @@ footer {
     margin: 15px;
     border: 1px solid #EEEEEE
 }
-.flex-element:hover .overlay .about {
+.flex-element:hover .overlay .about,
+.flex-element:focus .overlay .about {
     transform: translateY(0%);
 }
-.flex-element:hover {
+.flex-container .flex-element:hover,
+.flex-container .flex-element:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px
    rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
